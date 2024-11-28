@@ -26,7 +26,7 @@ logging.basicConfig(
 
 class TicketChecker:
     def __init__(self, password, discord_webhook_url):
-        self.url = "https://reserva.be/kansyasai2024/aikotoba"
+        self.url = "YOUR_URL"
         self.password = password
         self.discord_webhook_url = discord_webhook_url
         self.driver = None
@@ -364,8 +364,8 @@ class TicketChecker:
 
 def main():
     # 設定値
-    PASSWORD = "ibm2024"
-    DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1303923894792617984/kmXGoJBWhY4NwkV9yFprV8fXsBmyMKIpc_k9WSi9zKs7wkWyO588QiiHF22AYa-yJWrw"
+    PASSWORD = "xxx"
+    DISCORD_WEBHOOK_URL = "WEBHOOK_URL"
     
     checker = TicketChecker(PASSWORD, DISCORD_WEBHOOK_URL)
     
